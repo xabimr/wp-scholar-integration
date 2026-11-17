@@ -96,12 +96,14 @@
     color: #666;
 }
 
-.wp-scholar-sort {
+.wp-scholar-container .wp-scholar-sort {
+    display: block;
     margin: 0 0 2.5em;
     font-size: 0.95em;
 }
 
-.wp-scholar-sort-select {
-    margin-left: 0.4em;
+.wp-scholar-container .wp-scholar-sort-select {
+    display: block;
+    margin-top: 0.4em;
     padding: 0.25em 0.5em;
 }

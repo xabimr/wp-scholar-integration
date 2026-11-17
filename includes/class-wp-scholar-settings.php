@@ -77,7 +77,11 @@ class WP_Scholar_Settings {
      * Sanitize options
      */
     public function sanitize_options($options) {
-        $sanitized_options = array();
+        $current = get_option('wp_scholar_options', array());
+        $sanitized_options = array(
+            'scholar_id' => isset($current['scholar_id']) ? $current['scholar_id'] : '',
+            'cache_time' => isset($current['cache_time']) ? $current['cache_time'] : 24,
+        );
 
         // Sanitize scholar ID or URL
         if (isset($options['scholar_id'])) {
@@ -109,8 +113,8 @@ class WP_Scholar_Settings {
      * Render general section
      */
     public function render_general_section() {
-        echo '<p>' . __('Configure your Google Scholar integration settings below.', 'wp-scholar-integration') . '</p>';
-        echo '<p>' . __('Use the shortcode [google_scholar] to display publications on any page or post.', 'wp-scholar-integration') . '</p>';
+        echo '<p>' . esc_html__('Configure your Google Scholar integration settings below.', 'wp-scholar-integration') . '</p>';
+        echo '<p>' . esc_html__('Use the shortcode [google_scholar] to display publications on any page or post.', 'wp-scholar-integration') . '</p>';
     }
 
     /**
@@ -121,7 +125,7 @@ class WP_Scholar_Settings {
         $scholar_id = isset($options['scholar_id']) ? $options['scholar_id'] : '';
 
         echo '<input type="text" name="wp_scholar_options[scholar_id]" value="' . esc_attr($scholar_id) . '" class="regular-text" />';
-        echo '<p class="description">' . __('Enter your Google Scholar ID (e.g., "ABC123XYZ") or the full profile URL.', 'wp-scholar-integration') . '</p>';
+        echo '<p class="description">' . esc_html__('Enter your Google Scholar ID (e.g., "ABC123XYZ") or the full profile URL.', 'wp-scholar-integration') . '</p>';
     }
 
     /**
@@ -132,7 +136,7 @@ class WP_Scholar_Settings {
         $cache_time = isset($options['cache_time']) ? $options['cache_time'] : 24;
 
         echo '<input type="number" name="wp_scholar_options[cache_time]" value="' . esc_attr($cache_time) . '" class="small-text" min="1" />';
-        echo '<p class="description">' . __('Number of hours to cache the Google Scholar data. Minimum 1 hour.', 'wp-scholar-integration') . '</p>';
+        echo '<p class="description">' . esc_html__('Number of hours to cache the Google Scholar data. Minimum 1 hour.', 'wp-scholar-integration') . '</p>';
     }
 
     /**

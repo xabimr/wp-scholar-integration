@@ -1,6 +1,8 @@
 # Changelog
 
-## 1.5.3
+## 1.5.4
+- Ajustes: textos escapados con `esc_html__` y ya no se pierde `cache_time`/ID al guardar un campo ausente.
+- CSS del selector con mayor especificidad (selector en su propia línea, margen inferior fiable).
 - Evita duplicar el año al final de la revista ("…, 2016, 2016").
 
 ## 1.5.2
