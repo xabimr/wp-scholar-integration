@@ -1,0 +1,75 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: WP Scholar Integration 1.5.2\n"
+"Language: es_ES\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+msgid "Cache Duration (hours)"
+msgstr "Duración de la caché (horas)"
+
+msgid "Citations (most cited first)"
+msgstr "Citas (más citadas primero)"
+
+msgid "Cited by"
+msgstr "Citado por"
+
+msgid "Configure your Google Scholar integration settings below."
+msgstr "Configura a continuación la integración con Google Scholar."
+
+msgid "Empty response from Google Scholar"
+msgstr "Respuesta vacía de Google Scholar"
+
+msgid "Enter your Google Scholar ID (e.g., \"ABC123XYZ\") or the full profile URL."
+msgstr "Introduce tu ID de Google Scholar (por ejemplo, \"ABC123XYZ\") o la URL completa del perfil."
+
+msgid "General Settings"
+msgstr "Ajustes generales"
+
+msgid "Google Scholar"
+msgstr "Google Scholar"
+
+msgid "Google Scholar ID or URL"
+msgstr "ID o URL de Google Scholar"
+
+msgid "Google Scholar Integration"
+msgstr "Integración con Google Scholar"
+
+msgid "Google Scholar data is temporarily unavailable."
+msgstr "Los datos de Google Scholar no están disponibles temporalmente."
+
+msgid "Google Scholar did not return a valid profile (blocked, CAPTCHA or wrong ID)."
+msgstr "Google Scholar no devolvió un perfil válido (bloqueo, CAPTCHA o ID incorrecto)."
+
+msgid "Google Scholar responded with HTTP %d (possibly blocked)."
+msgstr "Google Scholar respondió con HTTP %d (posiblemente bloqueado)."
+
+msgid "Invalid Google Scholar ID"
+msgstr "ID de Google Scholar no válido"
+
+msgid "No Google Scholar ID provided"
+msgstr "No se indicó ningún ID de Google Scholar"
+
+msgid "No publications found."
+msgstr "No se encontraron publicaciones."
+
+msgid "Number of hours to cache the Google Scholar data. Minimum 1 hour."
+msgstr "Horas durante las que se guarda en caché la información de Google Scholar. Mínimo 1 hora."
+
+msgid "Publications by"
+msgstr "Publicaciones de"
+
+msgid "Sort by"
+msgstr "Ordenar por"
+
+msgid "Use the shortcode [google_scholar] to display publications on any page or post."
+msgstr "Usa el shortcode [google_scholar] para mostrar las publicaciones en cualquier página o entrada."
+
+msgid "Year (newest first)"
+msgstr "Año (más reciente primero)"
+
+msgid "Year (oldest first)"
+msgstr "Año (más antiguo primero)"
+

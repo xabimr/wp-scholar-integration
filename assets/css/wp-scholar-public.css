@@ -1,0 +1,107 @@
+/**
+ * WP Scholar Integration Public CSS
+ */
+
+.wp-scholar-container {
+    margin: 2em 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+}
+
+.wp-scholar-author {
+    margin-bottom: 1.5em;
+}
+
+.wp-scholar-author h2 {
+    font-size: 1.5em;
+    margin: 0 0 0.5em;
+    padding: 0;
+    line-height: 1.4;
+}
+
+.wp-scholar-publications {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.wp-scholar-publication {
+    margin-bottom: 1.5em;
+    padding-bottom: 1.5em;
+    border-bottom: 1px solid #eee;
+}
+
+.wp-scholar-publication:last-child {
+    border-bottom: none;
+}
+
+.wp-scholar-title {
+    font-size: 1.2em;
+    margin: 0 0 0.3em;
+    padding: 0;
+    line-height: 1.4;
+}
+
+.wp-scholar-title a {
+    text-decoration: none;
+    color: #0073aa;
+}
+
+.wp-scholar-title a:hover {
+    text-decoration: underline;
+    color: #00a0d2;
+}
+
+.wp-scholar-authors {
+    font-size: 0.95em;
+    margin-bottom: 0.5em;
+    color: #333;
+}
+
+.wp-scholar-details {
+    font-size: 0.9em;
+    color: #666;
+}
+
+.wp-scholar-venue {
+    font-style: italic;
+}
+
+.wp-scholar-venue:after {
+    content: ", ";
+}
+
+.wp-scholar-year:after {
+    content: " • ";
+}
+
+.wp-scholar-citations a {
+    text-decoration: none;
+    color: #0073aa;
+}
+
+.wp-scholar-citations a:hover {
+    text-decoration: underline;
+    color: #00a0d2;
+}
+
+.wp-scholar-error {
+    color: #d63638;
+    padding: 1em;
+    border-left: 4px solid #d63638;
+    background: #fcf0f1;
+}
+
+.wp-scholar-no-results {
+    font-style: italic;
+    color: #666;
+}
+
+.wp-scholar-sort {
+    margin: 0 0 2.5em;
+    font-size: 0.95em;
+}
+
+.wp-scholar-sort-select {
+    margin-left: 0.4em;
+    padding: 0.25em 0.5em;
+}
