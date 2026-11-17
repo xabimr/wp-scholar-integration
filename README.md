@@ -7,6 +7,8 @@ Muestra tus publicaciones de Google Scholar en WordPress con un shortcode. / Sho
 - Caché configurable, caché de fallos y copia de la última respuesta buena si Google bloquea.
 - Traducciones incluidas: gallego y castellano (según el idioma del sitio).
 
+![Ejemplo: publicaciones ordenadas por citas](docs/screenshot.png)
+
 ## Instalación
 
 Copia la carpeta en `wp-content/plugins/wp-scholar-integration/`, actívalo y configura tu ID en **Ajustes → Google Scholar** (acepta la URL del perfil).
