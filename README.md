@@ -11,7 +11,7 @@ Muestra tus publicaciones de Google Scholar en WordPress con un shortcode. / Sho
 
 ## Instalación
 
-Copia la carpeta en `wp-content/plugins/wp-scholar-integration/`, actívalo y configura tu ID en **Ajustes → Google Scholar** (acepta la URL del perfil).
+Descarga `wp-scholar-integration.zip` desde [Releases](https://github.com/xabimr/wp-scholar-integration/releases/latest) y súbelo en **Plugins → Añadir nuevo → Subir plugin** (o descomprímelo en `wp-content/plugins/`). El zip de "Source code" que genera GitHub no sirve para instalar directamente, porque la carpeta se llama distinto. Después actívalo y configura tu ID en **Ajustes → Google Scholar** (acepta la URL del perfil).
 
 ## Uso
 
