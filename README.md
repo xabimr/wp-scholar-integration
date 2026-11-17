@@ -36,6 +36,10 @@ Descarga `wp-scholar-integration.zip` desde [Releases](https://github.com/xabimr
 
 Google Scholar no ofrece API oficial: el plugin lee el HTML público del perfil, lo que puede incumplir sus condiciones de uso y puede ser bloqueado por Google. Úsalo bajo tu responsabilidad y con caché razonable.
 
+## Publicar una versión
+
+Sube la versión en `wp-scholar-integration.php` (cabecera y constante) y en `CHANGELOG.md`, haz commit y crea el tag: `git tag v1.5.5 && git push origin main v1.5.5`. La GitHub Action construye el zip y crea la release sola.
+
 ## Licencia
 
 MIT. Ver [LICENSE](LICENSE).

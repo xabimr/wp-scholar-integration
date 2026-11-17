@@ -1,0 +1,42 @@
+name: Release
+
+on:
+  push:
+    tags:
+      - 'v*'
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Comprobar que la versión del plugin coincide con el tag
+        run: |
+          TAG="${GITHUB_REF_NAME#v}"
+          HEADER=$(grep -m1 -E '^\s*\* Version:' wp-scholar-integration.php | sed -E 's/.*Version:\s*//; s/\s+$//')
+          CONST=$(grep -m1 "WP_SCHOLAR_VERSION'" wp-scholar-integration.php | sed -E "s/.*'WP_SCHOLAR_VERSION',\s*'([^']+)'.*/\1/")
+          echo "tag=$TAG cabecera=$HEADER constante=$CONST"
+          [ "$TAG" = "$HEADER" ] && [ "$TAG" = "$CONST" ] || { echo "La versión no coincide con el tag"; exit 1; }
+
+      - name: Construir el zip instalable
+        run: |
+          git archive --format=zip --prefix=wp-scholar-integration/ \
+            -o wp-scholar-integration.zip "$GITHUB_REF_NAME"
+
+      - name: Notas desde el CHANGELOG
+        run: |
+          VER="${GITHUB_REF_NAME#v}"
+          awk -v v="## $VER" '$0==v{f=1;next} /^## /{f=0} f' CHANGELOG.md > notes.md
+          [ -s notes.md ] || echo "Ver CHANGELOG.md" > notes.md
+
+      - name: Publicar release
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          gh release create "$GITHUB_REF_NAME" wp-scholar-integration.zip \
+            --title "WP Scholar Integration ${GITHUB_REF_NAME#v}" \
+            --notes-file notes.md
