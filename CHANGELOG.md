@@ -1,5 +1,8 @@
 # Changelog
 
+## 1.5.3
+- Evita duplicar el año al final de la revista ("…, 2016, 2016").
+
 ## 1.5.2
 - Licencia cambiada a MIT; añadidos LICENSE y README.
 - Traducciones incluidas: gallego (gl_ES) y castellano (es_ES); el idioma se toma del idioma del sitio en WordPress.

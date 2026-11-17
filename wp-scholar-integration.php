@@ -3,7 +3,7 @@
  * Plugin Name: WP Scholar Integration
  * Plugin URI: https://github.com/xabimr/wp-scholar-integration
  * Description: Integrates Google Scholar publications into WordPress using shortcodes.
- * Version: 1.5.2
+ * Version: 1.5.3
  * Author: Xabier Rolan
  * Author URI: https://rolan.gal
  * License: MIT
@@ -18,7 +18,7 @@ if (!defined('WPINC')) {
 }
 
 // Define plugin constants
-define('WP_SCHOLAR_VERSION', '1.5.2');
+define('WP_SCHOLAR_VERSION', '1.5.3');
 define('WP_SCHOLAR_PLUGIN_DIR', plugin_dir_path(__FILE__));
 define('WP_SCHOLAR_PLUGIN_URL', plugin_dir_url(__FILE__));
 define('WP_SCHOLAR_PLUGIN_BASENAME', plugin_basename(__FILE__));

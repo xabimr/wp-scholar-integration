@@ -182,7 +182,12 @@ class WP_Scholar_Shortcode {
                 
                 // Venue
                 if (!empty($pub['venue']) && $atts['show_venue'] === 'yes') {
-                    echo '<span class="wp-scholar-venue">' . esc_html($pub['venue']) . '</span>';
+                    $venue = $pub['venue'];
+                    // Scholar ya añade el año al final de la revista: evitar duplicarlo
+                    if (!empty($pub['year']) && $atts['show_year'] === 'yes') {
+                        $venue = preg_replace('/[,\s]*' . preg_quote($pub['year'], '/') . '\s*$/u', '', $venue);
+                    }
+                    echo '<span class="wp-scholar-venue">' . esc_html($venue) . '</span>';
                 }
                 
                 // Year
