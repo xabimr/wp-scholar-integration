@@ -1,5 +1,7 @@
 # WP Scholar Integration
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24371783.svg)](https://doi.org/10.5281/zenodo.24371783)
+
 Muestra tus publicaciones de Google Scholar en WordPress con un shortcode. / Shows your Google Scholar publications in WordPress via shortcode.
 
 - Selector de orden en la web: año (más reciente / más antiguo) o número de citas.
@@ -43,3 +45,7 @@ Sube la versión en `wp-scholar-integration.php` (cabecera y constante) y en `CH
 ## Licencia
 
 MIT. Ver [LICENSE](LICENSE).
+
+## Cómo citar
+
+Martínez-Rolán, X. (2026). *WP Scholar Integration: plugin de WordPress para mostrar publicaciones de Google Scholar* [Software]. Zenodo. https://doi.org/10.5281/zenodo.24371783

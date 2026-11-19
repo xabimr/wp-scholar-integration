@@ -8,6 +8,7 @@ authors:
     affiliation: "Universidade de Vigo"
     orcid: "https://orcid.org/0000-0002-7631-2292"
 version: "1.5.5"
+doi: "10.5281/zenodo.24371783"
 date-released: "2026-11-19"
 license: MIT
 repository-code: "https://github.com/xabimr/wp-scholar-integration"
