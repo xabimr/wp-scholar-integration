@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.5.5
+- Metadatos de citación (CITATION.cff) y de Zenodo (.zenodo.json) para obtener DOI.
+- Estos ficheros no se incluyen en el zip instalable.
+
 ## 1.5.4
 - Ajustes: textos escapados con `esc_html__` y ya no se pierde `cache_time`/ID al guardar un campo ausente.
 - CSS del selector con mayor especificidad (selector en su propia línea, margen inferior fiable).

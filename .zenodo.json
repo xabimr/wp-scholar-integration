@@ -1,0 +1,32 @@
+{
+  "title": "WP Scholar Integration: plugin de WordPress para mostrar publicaciones de Google Scholar",
+  "upload_type": "software",
+  "description": "<p>Plugin de WordPress que muestra las publicaciones de un perfil de Google Scholar mediante un shortcode. Permite ordenar en la propia web por año (más reciente o más antiguo) o por número de citas, recupera hasta 500 publicaciones por perfil con paginación automática e incorpora caché configurable, caché de fallos y copia de la última respuesta válida si Google bloquea la consulta. Incluye traducciones al gallego y al castellano. Está pensado para que investigadores, grupos y proyectos de investigación mantengan actualizada su producción científica en sus webs sin trabajo manual.</p>",
+  "creators": [
+    {
+      "name": "Martínez-Rolán, Xabier",
+      "affiliation": "Universidade de Vigo",
+      "orcid": "0000-0002-7631-2292"
+    }
+  ],
+  "license": "MIT",
+  "keywords": [
+    "WordPress",
+    "plugin",
+    "Google Scholar",
+    "publicaciones científicas",
+    "comunicación científica",
+    "visibilidad de la investigación",
+    "webs académicas",
+    "software libre"
+  ],
+  "language": "spa",
+  "access_right": "open",
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/xabimr/wp-scholar-integration",
+      "relation": "isSupplementTo",
+      "scheme": "url"
+    }
+  ]
+}

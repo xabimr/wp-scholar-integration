@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+message: "Si utilizas este software, por favor cítalo así."
+title: "WP Scholar Integration: plugin de WordPress para mostrar publicaciones de Google Scholar"
+type: software
+authors:
+  - family-names: "Martínez-Rolán"
+    given-names: "Xabier"
+    affiliation: "Universidade de Vigo"
+    orcid: "https://orcid.org/0000-0002-7631-2292"
+version: "1.5.5"
+date-released: "2026-11-19"
+license: MIT
+repository-code: "https://github.com/xabimr/wp-scholar-integration"
+keywords:
+  - WordPress
+  - Google Scholar
+  - publicaciones científicas
+  - webs académicas
